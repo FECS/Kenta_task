@@ -18,13 +18,13 @@ class Matsujunarigatou
 		puts json
 	end
 
-	def showDoraemon
+	def showOneWeekFriends
 		html = NKF.nkf("-w",open('http://animemap.net/api/table/tokyo.json').read)
 		json = JSON.parser.new(html)
 		hash = json.parse()
 		response = hash['response']
 		items = response['item']
-		
+
 		items.each do |item|
 			if item['title']=='一週間フレンズ。'
 				item.each do |key,value|
@@ -41,4 +41,4 @@ kenta = Matsujunarigatou.new
 
 kenta.sayHello
 #kenta.showGoogle
-kenta.showDoraemon
+kenta.showFriends
