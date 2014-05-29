@@ -41,4 +41,4 @@ kenta = Matsujunarigatou.new
 
 kenta.sayHello
 #kenta.showGoogle
-kenta.showFriends
+kenta.showOneWeekFriends
