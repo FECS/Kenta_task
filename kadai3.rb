@@ -2,9 +2,9 @@
 kenta = "kenta desu"
 
 class << kenta
-	def sayHello
-		puts "ハラケンタです"
-	end
+  def sayHello
+    puts "ハラケンタです"
+  end
 end
 
 kenta.sayHello
